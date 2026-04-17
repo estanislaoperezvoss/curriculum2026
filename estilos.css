@@ -17,8 +17,49 @@
 
 h1 {
 font-family: 'interbold', sans-serif; 
+color:brown;
+font-size: 30px;
+text-align: center;
+margin: 10px;
+padding: 20px 0px 00px 0px;
+}
+
+h2 {
+font-family: 'inter', sans-serif; 
+color:black;
+font-size: 10px;
+text-align: left;
+margin: 0;
+padding: 10;
 }
 p {
 font-family: 'inter', sans-serif; 
+color:black;
+font-size: 15px;
+text-align: center;
+margin: 5;
+padding: 5px;
 }
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:normal;
+    flex-wrap:wrap;
+    padding: 50px;
+    background-color: black;
+    }
 
+nav {
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 20px;
+    
+    }
+
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        max-width: 1920px;
+       }
