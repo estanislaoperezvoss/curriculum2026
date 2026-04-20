@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "inter";
+    src: url(fuentes/interregular.ttf) format(ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "interbold";
+    src: url(fuentes/interbold.ttf) format(ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'interbold', sans-serif;
+    color: white;
+    font-size: clamp(3rem, 5vw, 7rem);
+    text-align: center;
+    margin: 10px;
+    padding: 20px 0 0 0;
+}
+
+h2 {
+    font-family: 'interbold', sans-serif;
+    color: white;
+    font-size: clamp(2rem, 4vw, 5rem);
+    text-align: center;
+    margin: 10px;
+    padding: 40px 0 0 0;
+}
+
+h3 {
+    font-family: 'inter', sans-serif;
+    color: black;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    text-align: center;
+    margin: 10px;
+    padding: 20px 0 0 0;
+}
+
+p {
+    font-family: 'inter', sans-serif;
+    color: #000000;
+    font-size: 1.8rem;
+    text-wrap: pretty;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: black;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    font-family: 'interbold', sans-serif;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+/* Esto es de Experiencia Laboral */
+#trabajo {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#trabajo .banner {
+    margin: 0;
+    padding: 0;
+}
+
+#trabajo .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trabajo-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+#trabajo .retrato {
+    flex: 1;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#trabajo .retrato img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.educacion-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.educacion-contenido div {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#educacion .retrato {
+    flex: 0.3;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+#educacion .retrato img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.premios-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.premios-contenido div {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#premios .retrato {
+    flex: 0.3;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+#premios .retrato img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* General */
+section {
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+section div {
+    width: 50%;
+    min-width: 300px;
+}
+
+.invertida {
+    justify-content: flex-end;
+}
+
+section div h2,
+section div h3,
+section div p {
+    text-align: left;
+}
+
+section.invertida div h2,
+section.invertida div h3,
+section.invertida div p {
+    text-align: right;
+}
+
+/* Pie de página y links */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+footer a:hover {
+    color: lightblue;
+}
